@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>VAT Calculator</title>
+</head>
+<body>
+    <div id="form">
+        <form id="vat-calculator-form">
+            <label for="vat-rate">VAT rate:</label><br>
+            <select id="vat-rate" name="vat-rate">
+              <option value="21">21%</option>
+              <option value="10">10%</option>
+            </select>
+            <label for="amount">Amount/ Suma/ Cantidad:</label><br>
+            <input type="number" id="amount" name="amount"><br>
+            <input type="submit" value="Calculate">
+          </form> 
+          
+          <!-- Results -->
+          <div id="results" style="display: none;">
+            <p>VAT: $<span id="vat"></span></p>
+            <p>Total: $<span id="total"></span></p>
+          </div>
+    </div>
+
+      <script src="script.js"></script> 
+</body>
+</html>
