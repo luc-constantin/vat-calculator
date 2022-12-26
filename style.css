@@ -1,14 +1,13 @@
 
 
 #vat-calculator-form {
-    margin-top: 20px;
     width: 400px;
     margin: 0 auto;
     text-align: left;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    
+    margin-top: 30px;
   }
   
   #vat-calculator-form label {
@@ -65,16 +64,15 @@
     font-weight: normal;
   }
 
- /* responsive V. 1.10 */
+ /* responsive styles */
 @media screen and (max-width: 768px) {
   #vat-calculator-form {
     width: 80%;
   }
   #vat-calculator-form input {
-    width: 100%;
+    width: 80%;
   }
   #results {
     width: 90%;
   }
 }
-  
