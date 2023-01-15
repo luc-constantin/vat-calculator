@@ -1,7 +1,9 @@
-* {
-  width: 60%!;
-  
-  }
+* 
+.container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
 
 #vat-calculator-form {
     width: 300px;
