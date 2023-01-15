@@ -17,7 +17,7 @@
   }
   
   #vat-calculator-form input {
-    width: 100%;
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -67,12 +67,12 @@
  /* responsive styles */
 @media screen and (max-width: 768px) {
   #vat-calculator-form {
-    width: 80%;
+    width: 60%;
   }
   #vat-calculator-form input {
-    width: 80%;
+    width: 60%;
   }
   #results {
-    width: 90%;
+    width: 60%;
   }
 }
