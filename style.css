@@ -1,6 +1,3 @@
-body{
-    overflow: hidden!important;
-}
 
 #vat-calculator-form {
     width: 40%;
@@ -66,7 +63,7 @@ body{
     font-weight: normal;
   }
 
- /* responsive styles */
+/*  
 @media screen and (max-width: 768px) {
   #vat-calculator-form {
     width: 70%;
@@ -77,5 +74,5 @@ body{
   #results {
     width: 69%;
   }
-}
+} */
 /* version 1.0.1 updated Feb 3. 2023 */
