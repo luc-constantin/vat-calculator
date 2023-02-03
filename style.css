@@ -1,12 +1,5 @@
-* 
-.container {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-}
-
 #vat-calculator-form {
-    width: 300px;
+    width: 40%;
     margin: 0 auto;
     text-align: left;
     padding: 15px;
@@ -46,7 +39,7 @@
   }
   
   #results {
-    width: 400px;
+    width: 39%;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -72,12 +65,13 @@
  /* responsive styles */
 @media screen and (max-width: 768px) {
   #vat-calculator-form {
-    width: 60%;
+    width: 70%;
   }
   #vat-calculator-form input {
-    width: 60%;
+    width: 70%;
   }
   #results {
-    width: 60%;
+    width: 69%;
   }
 }
+/* version 1.0.1 updated Feb 3. 2023 */
