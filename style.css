@@ -1,3 +1,7 @@
+*{
+    overflow: hidden!important;
+}
+
 #vat-calculator-form {
     width: 40%;
     margin: 0 auto;
