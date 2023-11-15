@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAT Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add titles and subtitles -->
+    <title>VAT Calculator</title>
+    <meta name="description" content="Calculadora IVA">
+    <meta name="keywords" content="Calculator TVA">
+</head>
+<body>
+    <h1 style="text-align: center;">VAT Calculator</h1>
+    <h3 style="text-align: center;">Calculadora IVA</h3>
+    <h3 style="text-align: center;">Calculator TVA</h3>
+
+  
+    <form id="vat-calculator-form">
+        <label for="vat-rate">VAT rate:</label><br>
+        <select id="vat-rate" name="vat-rate">
+            <option value="21">21%</option>
+            <option value="19">19%</option>
+            <option value="10">10%</option>
+        </select>
+        <label for="amount">Amount/ Suma/ Cantidad:</label><br>
+        <input type="number" id="amount" name="amount" required><br>
+        <input type="submit" value="Calculate">
+    </form> 
+      
+    <!-- Results -->
+    <div id="results" style="display: none;">
+        <p>VAT: €<span id="vat"></span></p>
+        <p>Total: €<span id="total"></span></p>
+    </div>
+
+    <script src="script.js"></script> 
+    <script>
+        document.getElementById('vat-calculator-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var vatRate = document.getElementById('vat-rate').value;
+            var amount = document.getElementById('amount').value;
+
+            // Validate that amount is a number
+            if (isNaN(amount)) {
+                alert('Please enter a valid number for the amount.');
+                return;
+            }
+
+            var vat = (vatRate / 100) * amount;
+            var total = parseFloat(amount) + parseFloat(vat);
+
+            document.getElementById('vat').innerHTML = vat.toFixed(2);
+            document.getElementById('total').innerHTML = total.toFixed(2);
+            document.getElementById('results').style.display = '';
+        });
+    </script>
+</body>
+</html>
