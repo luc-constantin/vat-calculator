@@ -12,7 +12,7 @@
 
 #vat-calculator-form label {
   display: block;
-  margin-bottom: 10px; /* Fixed typo in margin value */
+  margin-bottom: 10px; 
   font-weight: bold;
 }
 
@@ -22,12 +22,23 @@
   margin: 8px 0;
   box-sizing: border-box;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
+}
+
+#vat-calculator-form input:focus {
+  border: 2px solid rgb(88, 88, 202);
+  border-radius: 5px;
 }
 
 #vat-rate {
-  padding: 5px;
+  padding: 11px;
   border: 1px solid #ccc;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+#vat-rate:focus{
+  border: 2px solid rgb(88, 88, 202);
+  border-radius: 5px;
 }
 
 #vat-calculator-form input[type="submit"] {
@@ -77,11 +88,21 @@
   }
   #vat-calculator-form input {
       width: 100%; 
+  }
   #results {
       width: 80%;
       padding: 20px; 
       margin-top: 0px;
       border-radius: 0 0 10px 10px; 
   }
-}
+  #vat-rate {
+    padding: 11px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  #vat-rate:focus{
+    border: 2px solid rgb(88, 88, 202);
+    border-radius: 5px;
+  }
 }
