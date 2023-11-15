@@ -1,1 +1,87 @@
+/* Center the form on desktop */
+#vat-calculator-form {
+  width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 30px;
+  border-radius: 10px 10px 0 0; 
+}
 
+#vat-calculator-form label {
+  display: block;
+  margin-bottom: 10px; /* Fixed typo in margin value */
+  font-weight: bold;
+}
+
+#vat-calculator-form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#vat-rate {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+#vat-calculator-form input[type="submit"] {
+  background-color: rgb(128, 128, 232);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#vat-calculator-form input[type="submit"]:hover {
+  background-color: rgb(88, 88, 202);
+}
+
+#results {
+  width: 400px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0 0 10px 10px; 
+  display: flex;
+  margin: auto;
+}
+
+#results p {
+  margin: 10px 0;
+  font-weight: bold;
+  color: rgb(88, 88, 202);
+  text-align: center;
+  display: flex;
+  margin: auto;
+}
+
+#results span {
+  font-weight: normal;
+}
+
+/* Add media queries for responsive styles */
+@media screen and (max-width: 768px) {
+  #vat-calculator-form {
+      width: 80%;
+      margin: 0 auto; 
+      padding: 20px; 
+      margin-top: 20px;
+      border-radius: 10px 10px 0 0; 
+  }
+  #vat-calculator-form input {
+      width: 100%; 
+  #results {
+      width: 80%;
+      padding: 20px; 
+      margin-top: 0px;
+      border-radius: 0 0 10px 10px; 
+  }
+}
+}
