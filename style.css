@@ -12,7 +12,7 @@
 
 #vat-calculator-form label {
   display: block;
-  margin-bottom: 10px; /* Fixed typo in margin value */
+  margin-bottom: 10px; 
   font-weight: bold;
 }
 
