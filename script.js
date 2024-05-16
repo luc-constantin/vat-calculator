@@ -10,12 +10,8 @@ document.getElementById('vat-calculator-form').addEventListener('submit', functi
     var vatRate = document.getElementById('vat-rate').value;
     var amountInput = document.getElementById('amount').value;
 
-    console.log('Amount Input:', amountInput);
-
-    // Replace commas with periods for decimal numbers
-    var amount = parseFloat(amountInput.replace(',', '.'));
-
-    console.log('Parsed Amount:', amount);
+    // Match both comma and period as decimal separators
+    var amount = parseFloat(amountInput.replace(/,/g, '.'));
 
     if (isNaN(amount)) {
         alert('Please enter a valid number for the amount.');
