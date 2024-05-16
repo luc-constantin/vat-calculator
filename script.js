@@ -1,5 +1,4 @@
 function resetCalculator() {
-  
     document.getElementById('vat-rate').value = '21';
     document.getElementById('amount').value = '';
     document.getElementById('results').style.display = 'none';
@@ -9,7 +8,10 @@ document.getElementById('vat-calculator-form').addEventListener('submit', functi
     event.preventDefault();
 
     var vatRate = document.getElementById('vat-rate').value;
-    var amount = document.getElementById('amount').value;
+    var amountInput = document.getElementById('amount').value;
+
+    // Replace commas with periods for decimal numbers
+    var amount = amountInput.replace(',', '.');
 
     if (isNaN(amount)) {
         alert('Please enter a valid number for the amount.');
