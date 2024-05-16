@@ -11,7 +11,7 @@ document.getElementById('vat-calculator-form').addEventListener('submit', functi
     var amountInput = document.getElementById('amount').value;
 
     // Replace commas with periods for decimal numbers
-    var amount = amountInput.replace(',', '.');
+    var amount = parseFloat(amountInput.replace(',', '.'));
 
     if (isNaN(amount)) {
         alert('Please enter a valid number for the amount.');
@@ -19,7 +19,7 @@ document.getElementById('vat-calculator-form').addEventListener('submit', functi
     }
 
     var vat = (vatRate / 100) * amount;
-    var total = parseFloat(amount) + parseFloat(vat);
+    var total = amount + vat;
 
     document.getElementById('vat').innerHTML = vat.toFixed(2);
     document.getElementById('total').innerHTML = total.toFixed(2);
