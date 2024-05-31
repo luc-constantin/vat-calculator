@@ -24,10 +24,9 @@
             <option value="10">10%</option>
         </select>
         <label for="amount">Amount/ Suma/ Cantidad:</label><br>
-        <input type="number" id="amount" name="amount" required><br>
+        <input type="text" id="amount" name="amount" required><br>
         <input type="submit" value="Calculate">
-        <input type="button" value="Reset Calculation" onclick="resetCalculator()" class="reset-button">
-
+        <input type="button" value="Reset Calculation" id="reset-button" class="reset-button">
     </form> 
       
     <!-- crafted by Luc https://accolades.dev -->
@@ -35,8 +34,9 @@
         <p>VAT: €<span id="vat"></span></p>
         <p>Total: €<span id="total"></span></p>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
 
 </body>
 </html>
