@@ -40,11 +40,11 @@
 }
 
 #vat-rate:focus {
-  border: 2px solid rgb(88, 88, 202);
+  border: 2px solid rgb(164, 164, 252)!important;
 }
 
 #vat-calculator-form input[type="submit"] {
-  background-color: rgb(128, 128, 232);
+  background-color: rgb(88, 88, 202);
   color: white;
   border: none;
   border-radius: 4px;
@@ -52,8 +52,18 @@
   outline: none;
 }
 
+#vat-calculator-form input[type="submit"]:focus::after{
+  border: 2px solid rgb(164, 164, 252)!important;
+
+}
+
 #vat-calculator-form input[type="submit"]:hover {
-  background-color: rgb(88, 88, 202);
+  background-color: rgb(128, 128, 232);
+}
+
+#vat-calculator-form input[type="submit"]:focus {
+  border: 2px solid rgb(88, 88, 202)!important;
+  border-radius: 5px;
 }
 
 .reset-button {
@@ -61,16 +71,16 @@
   cursor: pointer;
   width: 100%;
   outline: none;
-  background-color: #e77998;
+  background-color: rgb(247, 61, 61);
 }
 
 .reset-button:hover {
-  background-color: rgb(247, 61, 61);
+  background-color: #e77998;
   color: #fff;
 }
 
 .reset-button:focus {
-  border: 2px solid #e77998!important;
+  border: 2px solid rgb(247, 61, 61)!important;
   border-radius: 5px;
 }
 
