@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
    var form = document.getElementById('vat-calculator-form');
    var resetButton = document.getElementById('reset-button');
