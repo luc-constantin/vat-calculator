@@ -82,17 +82,20 @@
   border: 1px solid #ccc;
   border-radius: 0 0 10px 10px; 
   display: flex;
+  justify-content: space-around;
   margin: auto;
 }
 
 #results p {
-  margin: 10px 0;
+  margin-top: 20px; 
+  margin-right: 20px!important;
   font-weight: bold;
   color: rgb(88, 88, 202);
   text-align: center;
-  display: flex;
+  display: inline-flex; 
   margin: auto;
 }
+
 
 #results span {
   font-weight: normal;
