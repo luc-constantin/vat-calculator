@@ -1,4 +1,3 @@
-/* Ensure box sizing includes padding and border */
 * {
   box-sizing: border-box;
 }
@@ -23,7 +22,7 @@
 
 #vat-calculator-form input,
 #vat-calculator-form select {
-  width: calc(100% - 40px); /* Adjust width to accommodate padding and border */
+  width: calc(100% - 40px); 
   padding: 12px;
   margin: 8px 0;
   border: 1px solid #ccc;
@@ -36,7 +35,7 @@
 }
 
 #vat-rate {
-  /* Adjust padding for select element */
+  /* Adjusting padding for select element */
   padding: 11px;
 }
 
@@ -101,7 +100,7 @@
   font-weight: normal;
 }
 
-/* Add media queries for responsive styles */
+/* Media queries for responsive styles */
 @media screen and (max-width: 768px) {
   #vat-calculator-form {
     width: 80%;
