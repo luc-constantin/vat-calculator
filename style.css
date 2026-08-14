@@ -71,7 +71,7 @@
   cursor: pointer;
   width: 100%;
   outline: none;
-  background-color: rgb(247, 61, 61);
+  background-color: red;
 }
 
 .reset-button:hover {
